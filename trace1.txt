@@ -1,0 +1,54 @@
+Recherche du chemin de Arad à Bucharest
+============================================================
+
+--- Itération 1 ---
+Traitement de : A (g=0, h=260, f=260, parent=None)
+Open : []
+Closed : []
+
+--- Itération 2 ---
+Traitement de : S (g=140, h=180, f=320, parent=A)
+Open : ['Ti : f = 118+300=418, parent = A']
+Closed : ['A']
+
+--- Itération 3 ---
+Traitement de : R (g=220, h=122, f=342, parent=S)
+Open : ['F : f = 239+130=369, parent = S']
+Closed : ['A', 'S']
+
+--- Itération 4 ---
+Traitement de : F (g=239, h=130, f=369, parent=S)
+Open : ['P : f = 317+67=384, parent = R']
+Closed : ['A', 'R', 'S']
+
+--- Itération 5 ---
+Traitement de : Z (g=75, h=301, f=376, parent=A)
+Open : ['B : f = 450+0=450, parent = F']
+Closed : ['A', 'F', 'R', 'S']
+
+--- Itération 6 ---
+Traitement de : P (g=317, h=67, f=384, parent=R)
+Open : ['B : f = 450+0=450, parent = F']
+Closed : ['A', 'F', 'R', 'S', 'Z']
+
+--- Itération 7 ---
+Traitement de : Ti (g=118, h=300, f=418, parent=A)
+Open : ['B : f = 418+0=418, parent = P']
+Closed : ['A', 'F', 'P', 'R', 'S', 'Z']
+
+--- Itération 8 ---
+Traitement de : B (g=418, h=0, f=418, parent=P)
+Open : ['L : f = 229+260=489, parent = Ti']
+Closed : ['A', 'F', 'P', 'R', 'S', 'Ti', 'Z']
+
+============================================================
+>>> SOLUTION TROUVÉE !
+
+--- Solution Finale ---
+Arad -> Sibiu : 140 km
+Sibiu -> Rimnicu Vilela : 80 km
+Rimnicu Vilela -> Pitesti : 97 km
+Pitesti -> Bucharest : 101 km
+
+Distance totale : 418 km
+Chemin complet : Arad -> Sibiu -> Rimnicu Vilela -> Pitesti -> Bucharest

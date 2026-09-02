@@ -1,0 +1,114 @@
+Recherche du chemin de Timisoara à Neamt
+============================================================
+
+--- Itération 1 ---
+Traitement de : Ti (g=0, h=475, f=475, parent=None)
+Open : []
+Closed : []
+
+--- Itération 2 ---
+Traitement de : A (g=118, h=405, f=523, parent=Ti)
+Open : ['L : f = 111+435=546, parent = Ti']
+Closed : ['Ti']
+
+--- Itération 3 ---
+Traitement de : L (g=111, h=435, f=546, parent=Ti)
+Open : ['S : f = 258+301=559, parent = A']
+Closed : ['A', 'Ti']
+
+--- Itération 4 ---
+Traitement de : S (g=258, h=301, f=559, parent=A)
+Open : ['M : f = 181+429=610, parent = L']
+Closed : ['A', 'L', 'Ti']
+
+--- Itération 5 ---
+Traitement de : F (g=357, h=221, f=578, parent=S)
+Open : ['R : f = 338+264=602, parent = S']
+Closed : ['A', 'L', 'S', 'Ti']
+
+--- Itération 6 ---
+Traitement de : R (g=338, h=264, f=602, parent=S)
+Open : ['B : f = 568+228=796, parent = F']
+Closed : ['A', 'F', 'L', 'S', 'Ti']
+
+--- Itération 7 ---
+Traitement de : M (g=181, h=429, f=610, parent=L)
+Open : ['P : f = 435+250=685, parent = R']
+Closed : ['A', 'F', 'L', 'R', 'S', 'Ti']
+
+--- Itération 8 ---
+Traitement de : Z (g=193, h=426, f=619, parent=A)
+Open : ['D : f = 256+407=663, parent = M']
+Closed : ['A', 'F', 'L', 'M', 'R', 'S', 'Ti']
+
+--- Itération 9 ---
+Traitement de : D (g=256, h=407, f=663, parent=M)
+Open : ['P : f = 435+250=685, parent = R']
+Closed : ['A', 'F', 'L', 'M', 'R', 'S', 'Ti', 'Z']
+
+--- Itération 10 ---
+Traitement de : P (g=435, h=250, f=685, parent=R)
+Open : ['C : f = 376+358=734, parent = D']
+Closed : ['A', 'D', 'F', 'L', 'M', 'R', 'S', 'Ti', 'Z']
+
+--- Itération 11 ---
+Traitement de : C (g=376, h=358, f=734, parent=D)
+Open : ['B : f = 536+228=764, parent = P']
+Closed : ['A', 'D', 'F', 'L', 'M', 'P', 'R', 'S', 'Ti', 'Z']
+
+--- Itération 12 ---
+Traitement de : O (g=264, h=496, f=760, parent=Z)
+Open : ['B : f = 536+228=764, parent = P']
+Closed : ['A', 'C', 'D', 'F', 'L', 'M', 'P', 'R', 'S', 'Ti', 'Z']
+
+--- Itération 13 ---
+Traitement de : B (g=536, h=228, f=764, parent=P)
+Open : []
+Closed : ['A', 'C', 'D', 'F', 'L', 'M', 'O', 'P', 'R', 'S', 'Ti', 'Z']
+
+--- Itération 14 ---
+Traitement de : U (g=621, h=197, f=818, parent=B)
+Open : ['G : f = 626+297=923, parent = B']
+Closed : ['A', 'B', 'C', 'D', 'F', 'L', 'M', 'O', 'P', 'R', 'S', 'Ti', 'Z']
+
+--- Itération 15 ---
+Traitement de : V (g=763, h=100, f=863, parent=U)
+Open : ['H : f = 719+155=874, parent = U']
+Closed : ['A', 'B', 'C', 'D', 'F', 'L', 'M', 'O', 'P', 'R', 'S', 'Ti', 'U', 'Z']
+
+--- Itération 16 ---
+Traitement de : H (g=719, h=155, f=874, parent=U)
+Open : ['I : f = 855+58=913, parent = V']
+Closed : ['A', 'B', 'C', 'D', 'F', 'L', 'M', 'O', 'P', 'R', 'S', 'Ti', 'U', 'V', 'Z']
+
+--- Itération 17 ---
+Traitement de : I (g=855, h=58, f=913, parent=V)
+Open : ['E : f = 805+202=1007, parent = H']
+Closed : ['A', 'B', 'C', 'D', 'F', 'H', 'L', 'M', 'O', 'P', 'R', 'S', 'Ti', 'U', 'V', 'Z']
+
+--- Itération 18 ---
+Traitement de : G (g=626, h=297, f=923, parent=B)
+Open : ['N : f = 942+0=942, parent = I']
+Closed : ['A', 'B', 'C', 'D', 'F', 'H', 'I', 'L', 'M', 'O', 'P', 'R', 'S', 'Ti', 'U', 'V', 'Z']
+
+--- Itération 19 ---
+Traitement de : N (g=942, h=0, f=942, parent=I)
+Open : ['E : f = 805+202=1007, parent = H']
+Closed : ['A', 'B', 'C', 'D', 'F', 'G', 'H', 'I', 'L', 'M', 'O', 'P', 'R', 'S', 'Ti', 'U', 'V', 'Z']
+
+============================================================
+>>> SOLUTION TROUVÉE !
+
+--- Solution Finale ---
+Timisoara -> Arad : 118 km
+Arad -> Sibiu : 140 km
+Sibiu -> Rimnicu Vilela : 80 km
+Rimnicu Vilela -> Pitesti : 97 km
+Pitesti -> Bucharest : 101 km
+Bucharest -> Urziceni : 85 km
+Urziceni -> Vaslui : 142 km
+Vaslui -> Iasi : 92 km
+Iasi -> Neamt : 87 km
+
+Distance totale : 942 km
+Chemin complet : Timisoara -> Arad -> Sibiu -> Rimnicu Vilela -> Pitesti -> Bucharest -> Urziceni -> Vaslui -> Iasi -> Neamt
